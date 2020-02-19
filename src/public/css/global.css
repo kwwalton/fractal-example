@@ -1,0 +1,10 @@
+.example {
+  background-color: lightyellow;
+  margin: 20px; }
+  .example p {
+    color: purple;
+    font-weight: normal;
+    padding: 10px; }
+
+body {
+  background-color: aqua; }

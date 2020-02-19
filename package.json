@@ -1,0 +1,76 @@
+{
+  "name": "fractal-example",
+  "version": "1.0.0",
+  "description": "Example using Fractal pattern library as part of front-end development toolkit.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwwalton/fractal-example.git"
+  },
+  "keywords": [
+    "fractal, pattern library, example"
+  ],
+  "author": "kwwalton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwwalton/fractal-example/issues"
+  },
+  "homepage": "https://github.com/kwwalton/fractal-example#readme",
+  "dependencies": {
+    "@frctl/fractal": "^1.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "autoprefixer": "^9.7.4",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "check-dependencies": "^1.1.0",
+    "event-stream": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-accessibility": "^3.1.1",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-htmlhint": "^3.0.0",
+    "gulp-htmlrender": "^0.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-ignore": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-path": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svg2png": "^2.0.2",
+    "gulp-task-loader": "^1.5.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "imagemin-giflossy": "^5.1.10",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "imagemin-zopfli": "^6.0.0",
+    "run-sequence": "^2.2.1",
+    "yargs": "^15.1.0"
+  },
+  "config": {
+    "paths": {
+      "build": "build/",
+      "components": "src/components",
+      "assets": "src/public",
+      "docs": "src/docs",
+      "src": "src"
+    }
+  }
+}

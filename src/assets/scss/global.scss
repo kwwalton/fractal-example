@@ -1,0 +1,9 @@
+$color1: aqua;
+
+// Import scss files from each component
+@import "../../components/**/*.scss"
+
+// Global stuff
+body {
+    background-color: $color1;
+}
