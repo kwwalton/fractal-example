@@ -11,10 +11,10 @@
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
     <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.1" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.3.0" type="text/css">
 
 
-<title>Title from json file | fractal-example</title>
+<title>Title | fractal-example</title>
 
 </head>
 <body>
@@ -59,7 +59,7 @@
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
         <a class="Pen-previewLink" href="../preview/example.html" title="Component preview">
-            Title from json file
+            Title
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -157,8 +157,9 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-20473ec35fc80de4798f6b53c2b68605-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example"</span> <span class="hljs-attr">data-js</span>=<span class="hljs-string">"example"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is an example component from json file!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Adding a change to handlebar file.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -167,8 +168,9 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-20473ec35fc80de4798f6b53c2b68605-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example"</span> <span class="hljs-attr">data-js</span>=<span class="hljs-string">"example"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><span class="hljs-template-variable">{{ text }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Adding a change to handlebar file.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -197,13 +199,49 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
+                <option value="file-0a7d0dffda6cde494e6dd4f5045f88db">example.js</option>
+                
                 <option value="file-d213183e18fba02814bedc35558c022c">example.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-d213183e18fba02814bedc35558c022c" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-0a7d0dffda6cde494e6dd4f5045f88db" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-JavaScript FileBrowser-code">
+                                <pre><span class="hljs-keyword">const</span> example = <span class="hljs-function">(<span class="hljs-params">component</span>) =&gt;</span> {
+  <span class="hljs-comment">// code here</span>
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello World"</span>);
+};
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> example;
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/example/example.js"><span>/components/raw/example/example.js</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/example/example.js</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">105 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-d213183e18fba02814bedc35558c022c" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -308,11 +346,19 @@
         </div>
 
         <div class="Frame-handle" data-role="frame-resize-handle"></div>
-        
+
         <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
             <nav class="Navigation">
+    
+        <div class="Navigation-search">
+    <form action="" class="Search" data-behaviour="search">
+        <label class="Search-label" for="search-input">Search</label>
+        <input class="Search-input" id="search-input" type="text" placeholder="Enter keyword..." data-role="input">
+    </form>
+</div>
 
     
+        
 <div class="Navigation-group">
 
 <div class="Tree" data-behaviour="tree" id="tree-components">
@@ -344,6 +390,30 @@
         </li>
         
     
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="example-another.html" data-pjax>
+                <span>Example Another</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
     </ul>
 </div>
@@ -351,8 +421,8 @@
 </div>
 
 
-
     
+        
 <div class="Navigation-group">
 
 <div class="Tree" data-behaviour="tree" id="tree-docs">
@@ -377,10 +447,25 @@
 </div>
 
 
+    
+        
 
     
+        <div class="Navigation-group">
+    <div class="Tree">
+        <div class="Tree-title">
+            Information
+        </div>
+        <div class="Tree-aside">
+            Built on:
+            <time datetime="2020-04-21T00:29:47.347Z">
+                4/20/2020
+            </time>
+        </div>
+    </div>
+</div>
 
-
+    
 </nav>
 
         </div>
@@ -390,7 +475,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.1"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.3.0"></script>
 
 
 
