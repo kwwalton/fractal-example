@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/kwwalton/fractal-example#readme",
   "dependencies": {
-    "@frctl/fractal": "^1.2.1"
+    "@frctl/fractal": "^1.5.15"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
